@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'learningcenter'
+    #Apps
+    'learningcenter',
+    #Third Party Packages
+    'ckeditor',
+    'ckeditor_uploader',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +128,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     BASE_DIR / 'elearning/static/'
 ]
+CKEDITOR_UPLOAD_PATH = 'ckeditor/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
